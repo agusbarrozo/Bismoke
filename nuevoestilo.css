@@ -1,0 +1,665 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#frontPage{
+    max-width: 100%;
+    height: 1000px;
+    background-image: url("imagenes/fondoMain3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    resize: both;
+}
+
+#sectionFront{
+    position: absolute;
+    top: 50%;
+    left: 38%; /*porque con 38% lo veo en el medio y no con 50%?*/
+}
+
+#tituloFront{
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: initial;
+    text-align: center;
+    color: whitesmoke;
+}
+
+#linkFront{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 16px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+h1{
+    color: #0c3b2e;
+    font-family: 'Lato', sans-serif;
+    font-style: italic;
+    font-size: 32px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
+#tituloh2{
+    color: #6d9773;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+}
+
+#tituloh3{
+    color: #6d9773;
+    font-family: 'Lato', sans-serif;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+}
+
+#textoAbout{
+    color: #0c3b2e;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    text-transform: initial;
+    
+}
+
+#linksImportantes{
+    color: #BA6617;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 16px;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+/*
+.insideLinks{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 14px;
+    list-style-type: none;
+    text-decoration: none;
+}
+*/
+/*
+#barraNav{
+        background-color: tomato;
+        height: 100px;
+}*/
+
+.barraNav{
+    background-color:rgb(234, 231, 220);
+    height: 86px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+}
+
+/*
+#botonesNav{
+    color: #0c3b2e;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 14px;
+    list-style-type: none;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 220px;
+    margin-right: 220px;
+}
+*/
+.otrosLinks{
+    color: #FFBA00;
+}
+
+
+
+button{
+    color: #0c3b2e;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 14px;
+    list-style-type: none;
+}
+
+#textoComun{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+label{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+/* SUB MENU DEL NAV VIEJO
+.subnav ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.subnav li{
+    display: inline-block;
+    position: relative;
+    width: 14%;
+}
+
+.subnav ul ul{
+    position: absolute;
+    display: none;
+}
+
+.subnav ul ul li{
+    display: block;
+}
+
+.subnav ul li:hover ul{
+    display: block;
+}
+*/
+
+/* FONDOS*/
+
+#fondoMain{
+    background-color:rgb(234, 231, 220);
+}
+
+/* 
+PARA LINKS. AGREGAR EL UNDERLINE TRANSICION DE IZQ A DERECHA CUANDO HOVER
+*/
+
+
+a{
+    color: #0c3b2e;
+    text-decoration: none;
+}
+
+a:link{
+    color: #0c3b2e;
+    text-decoration: none;
+}
+
+a:visited{
+    color: #0c3b2e;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #0c3b2e;
+    text-decoration: underline;
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+/* SECCION INDEX*/
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* SECCION ABOUT US*/
+
+#aboutUs{
+    display: grid;
+    grid-template-columns: 30% 68%;
+    grid-template-rows: 250px 250px 250px;
+    gap: 2% 2%;
+    grid-template-areas: "bismokeAbout textoAboutUno"
+                        "whatWeDo textoAboutDos"
+                        "ourPurpose textoAboutTres";
+}
+
+#bismokeAbout{
+    grid-area: bismokeAbout;
+    width: 100%;
+    height: 250px;
+    text-align: end;
+}
+
+#whatWeDo{
+    grid-area: whatWeDo;
+    width: 100%;
+    height: 250px;
+    text-align: end;
+}
+
+#ourPurpose{
+    grid-area: ourPurpose;
+    width: 100%;
+    height: 250px;
+    text-align: end;
+}
+
+#textoAboutUno{
+    grid-area: textoAboutUno;
+    width: 100%;
+    height: 250px;
+}
+#textoAboutDos{
+    grid-area: textoAboutDos;
+    width: 100%;
+    height: 250px;
+}
+#textoAboutTres{
+    grid-area: textoAboutTres;
+    width: 100%;
+    height: 250px;
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* SECCION PRODUCTOS*/
+
+#grillaProductos{
+    display: grid;
+    grid-template-columns: 21.5% 26% 26% 26%;
+    grid-template-rows: 50px 500px 500px 500px;
+    gap: 0.5% 0.5%;
+    grid-template-areas: "navProd filtrosProd filtrosProd filtrosProd"
+                        "navProd homeUno homeDos homeTres"
+                        "navProd travelUno travelDos travelTres"
+                        "navProd everydayUno everydayDos everydayTres";
+}
+
+/* PARA HACER LA FOTO Y TEXTO ALINEADO DE CADA PRODUCTO 
+.cardsProductos{
+}
+*/
+
+
+#navProd{
+    grid-area: navProd;
+    background-color: rgb(234, 231, 220);
+    width: 100%;
+    height: 1573px;
+}
+
+#filtrosProd{
+    grid-area: filtrosProd;
+    background-color: rgb(234, 231, 220);
+    width: 100%;
+    height: 50px;
+}
+
+#homeUno{
+    grid-area: homeUno;
+    background-image: linear-gradient(to bottom, lightgray, slategray);
+    width: 100%;
+    height: 500px;
+}
+
+#homeDos{
+    grid-area: homeDos;
+    background-image: linear-gradient(to bottom, lightgray, slategray);
+    width: 100%;
+    height: 500px;
+}
+
+#homeTres{
+    grid-area: homeTres;
+    background-image: linear-gradient(to bottom, lightgray, slategray);
+    width: 100%;
+    height: 500px;
+}
+
+#travelUno{
+    grid-area: travelUno;
+    background-image: linear-gradient(to bottom, lightgray, slategray);
+    width: 100%;
+    height: 500px;
+}
+
+#travelDos{
+    grid-area: travelDos;
+    background-image: linear-gradient(to bottom, lightgray, slategray);
+    width: 100%;
+    height: 500px;
+}
+
+#travelTres{
+    grid-area: travelTres;
+    background-image: linear-gradient(to bottom, lightgray, slategray);
+    width: 100%;
+    height: 500px;
+}
+
+#everydayUno{
+    grid-area: everydayUno;
+    background-image: linear-gradient(to bottom, lightgray, slategray);
+    width: 100%;
+    height: 500px;
+}
+
+#everydayDos{
+    grid-area: everydayDos;
+    background-image: linear-gradient(to bottom, lightgray, slategray);
+    width: 100%;
+    height: 500px;
+}
+
+#everydayTres{
+    grid-area: everydayTres;
+    background-image: linear-gradient(to bottom, lightgray, slategray);
+    width: 100%;
+    height: 500px;
+}
+
+/* ---------------------------------------------------------------------------------------------------*/
+
+/* SECCION FIND A STORE */
+
+.fotoCiudad{
+    transition: all 2s;
+}
+
+.fotoCiudad:hover{
+    transform: scale(1.10, 1.10);
+}
+
+#storesFlex{
+    display: flex;
+    height: 1300px;
+    width: 100%;
+    /*background-color: brown;*/
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+#filaUno{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /*background-color: chartreuse;*/
+    height: 600px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#filaDos{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    /*background-color: rgb(255, 0, 242);*/
+    height: 600px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#buenosAires{
+    /*background-color: cyan;*/
+    height: 500px;
+    width: 50%;
+    display: block;
+    text-align: center;
+}
+
+#barcelona{
+    /*background-color: darkmagenta;*/
+    height: 500px;
+    width: 50%;
+    display: block;
+    text-align: center;
+}
+
+#newYork{
+    /*background-color: rgb(139, 32, 0);*/
+    height: 500px;
+    width: 50%;
+    display: block;
+    text-align: center;
+}
+
+#hongKong{
+   /* background-color: rgb(125, 139, 0);*/
+    height: 500px;
+    width: 50%;
+    display: block;
+    text-align: center;
+}
+
+#botonesStore{
+    color: #0c3b2e;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 14px;
+    list-style-type: none;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: black;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: whitesmoke;
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;    
+    padding-top: 50px;
+}
+
+/*
+#footerText{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    margin-left: 180px;
+    margin-right: 180px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+*/
+
+/* PRUEBA MOBILE EN INDEX 
+#pruebaMobile{
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: 300px;
+    gap: 0px 10px;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: "pruebaUno pruebaDos pruebaTres pruebaCuatro";
+}
+
+#pruebaUno{
+    grid-area: pruebaUno;
+    background-color: darkgray;
+    width: 100%;
+    height: 300px;
+}
+
+#pruebaDos{
+    grid-area: pruebaDos;
+    background-color: darkgray;
+    width: 100%;
+    height: 300px;
+}
+
+#pruebaTres{
+    grid-area: pruebaTres;
+    background-color: darkgray;
+    width: 100%;
+    height: 300px;
+}
+
+#pruebaCuatro{
+    grid-area: pruebaCuatro;
+    background-color: darkgray;
+    width: 100%;
+    height: 300px;
+}
+*/
+
+/* MEDIA ONLY - MOBILE FIRST (LO QUE ESTABA EN STYLE DEL INDEX)
+        @media only screen and (max-width:1500px){
+            body{
+                background-color: rgb(234, 231, 220);
+            }
+
+            #pruebaMobile{
+                display: grid;
+                grid-template-columns: 300px 300px 300px 300px;
+                grid-template-rows: 300px;
+                gap: 0px 10px;
+                justify-content: center;
+                align-items: center;
+                grid-template-areas: "pruebaUno pruebaDos pruebaTres pruebaCuatro";
+            }
+
+            #pruebaUno{
+                grid-area: pruebaUno;
+                background-color: darkgray;
+                width: 100%;
+                height: 300px;
+            }
+
+            #pruebaDos{
+                grid-area: pruebaDos;
+                background-color: darkgray;
+                width: 100%;
+                height: 300px;
+            }
+
+            #pruebaTres{
+                grid-area: pruebaTres;
+                background-color: darkgray;
+                width: 100%;
+                height: 300px;
+            }
+
+            #pruebaCuatro{
+                grid-area: pruebaCuatro;
+                background-color: darkgray;
+                width: 100%;
+                height: 300px;
+            }
+        }
+
+        @media only screen and (max-width:1200px){
+            body{
+                background-color: rgb(234, 231, 220);
+            }
+
+            #pruebaMobile{
+                display: grid;
+                grid-template-columns: 300px 300px 300px;
+                grid-template-rows: 300px;
+                gap: 0px 10px;
+                justify-content: center;
+                align-items: center;
+                grid-template-areas: "pruebaUno pruebaDos pruebaTres";
+            }
+
+            #pruebaUno{
+                grid-area: pruebaUno;
+                background-color: darkgray;
+                width: 100%;
+                height: 300px;
+            }
+
+            #pruebaDos{
+                grid-area: pruebaDos;
+                background-color: darkgray;
+                width: 100%;
+                height: 300px;
+            }
+
+            #pruebaTres{
+                grid-area: pruebaTres;
+                background-color: darkgray;
+                width: 100%;
+                height: 300px;
+            }
+        }
+
+        @media only screen and (max-width:768px){
+            body{
+                background-color: rgb(234, 231, 220);
+            }
+
+            #pruebaMobile{
+                display: grid;
+                grid-template-columns: 300px 300px;
+                grid-template-rows: 300px;
+                gap: 0px 10px;
+                justify-content: center;
+                align-items: center;
+                grid-template-areas: "pruebaUno pruebaDos";
+            }
+
+            #pruebaUno{
+                grid-area: pruebaUno;
+                background-color: darkgray;
+                width: 100%;
+                height: 300px;
+            }
+
+            #pruebaDos{
+                grid-area: pruebaDos;
+                background-color: darkgray;
+                width: 100%;
+                height: 300px;
+            }
+
+            }
+
+        @media only screen and (max-width:600px){
+            body{
+                background-color: rgb(234, 231, 220);
+            }
+
+            #pruebaMobile{
+                display: grid;
+                grid-template-columns: 300px;
+                grid-template-rows: 300px;
+                gap: 0px 10px;
+                justify-content: center;
+                align-items: center;
+                grid-template-areas: "pruebaUno";
+            }
+
+            #pruebaUno{
+                grid-area: pruebaUno;
+                background-color: darkgray;
+                width: 100%;
+                height: 300px;
+            }
+
+        }
+*/
+
