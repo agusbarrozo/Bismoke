@@ -1,0 +1,75 @@
+@import "colores";
+
+h1{
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    color: $colorTituloPrincipal;
+}
+
+label{
+    color: $colorTitulo;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: 'Lato', sans-serif;
+}
+
+.grilla__titulo{
+    font-family: 'Lato', sans-serif;
+    color: $colorTitulo;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 35px;
+
+    &--activo{
+        color: $colorTituloHover;
+    }
+}
+
+.grilla__texto{
+    color: $colorTexto;
+    font-family: 'Lato', sans-serif;
+    font-size: 13px;
+}
+
+.grilla__imagen{
+    height: 250px;
+    width: 100%;
+    background-color: $colorImagen;
+}
+
+
+.site{
+    font-size: 25px;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+}
+
+.under{
+    @extend .site;
+    font-size: 35px;
+}
+
+.construction{
+    @extend .under;
+    font-size: 45px;
+    width: 100%;
+}
+
+@mixin fondo ($pruebaFondo){
+    background-color: $pruebaFondo;
+}
+
+@mixin tamaño ($letraTamaño){
+    height: $letraTamaño;
+}
+
+h4{
+    @extend .site;
+    @include fondo (darkgrey);
+    @include tamaño(100px)
+}
