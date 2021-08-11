@@ -215,6 +215,8 @@ a {
     }
     
 
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
     /* SECCION PRODUCTOS*/
 
 #grillaProductos{
@@ -227,12 +229,6 @@ a {
                         "navProd travelUno travelDos travelTres"
                         "navProd everydayUno everydayDos everydayTres";
 }
-
-/* PARA HACER LA FOTO Y TEXTO ALINEADO DE CADA PRODUCTO 
-.cardsProductos{
-}
-*/
-
 
 #navProd{
     grid-area: navProd;
@@ -253,6 +249,12 @@ a {
     background-image: linear-gradient(to bottom, lightgray, slategray);
     width: 100%;
     height: 500px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 350px 150px;
+    gap: 0px 0px;
+    grid-template-areas: "imagenesProd"
+                         "textosProd";
 }
 
 #homeDos{
@@ -260,6 +262,12 @@ a {
     background-image: linear-gradient(to bottom, lightgray, slategray);
     width: 100%;
     height: 500px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 350px 150px;
+    gap: 0px 0px;
+    grid-template-areas: "imagenesProd"
+                         "textosProd";
 }
 
 #homeTres{
@@ -267,6 +275,12 @@ a {
     background-image: linear-gradient(to bottom, lightgray, slategray);
     width: 100%;
     height: 500px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 350px 150px;
+    gap: 0px 0px;
+    grid-template-areas: "imagenesProd"
+                         "textosProd";
 }
 
 #travelUno{
@@ -274,6 +288,12 @@ a {
     background-image: linear-gradient(to bottom, lightgray, slategray);
     width: 100%;
     height: 500px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 350px 150px;
+    gap: 0px 0px;
+    grid-template-areas: "imagenesProd"
+                         "textosProd";
 }
 
 #travelDos{
@@ -281,6 +301,12 @@ a {
     background-image: linear-gradient(to bottom, lightgray, slategray);
     width: 100%;
     height: 500px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 350px 150px;
+    gap: 0px 0px;
+    grid-template-areas: "imagenesProd"
+                         "textosProd";
 }
 
 #travelTres{
@@ -288,6 +314,12 @@ a {
     background-image: linear-gradient(to bottom, lightgray, slategray);
     width: 100%;
     height: 500px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 350px 150px;
+    gap: 0px 0px;
+    grid-template-areas: "imagenesProd"
+                         "textosProd";
 }
 
 #everydayUno{
@@ -295,6 +327,12 @@ a {
     background-image: linear-gradient(to bottom, lightgray, slategray);
     width: 100%;
     height: 500px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 350px 150px;
+    gap: 0px 0px;
+    grid-template-areas: "imagenesProd"
+                         "textosProd";
 }
 
 #everydayDos{
@@ -302,6 +340,12 @@ a {
     background-image: linear-gradient(to bottom, lightgray, slategray);
     width: 100%;
     height: 500px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 350px 150px;
+    gap: 0px 0px;
+    grid-template-areas: "imagenesProd"
+                         "textosProd";
 }
 
 #everydayTres{
@@ -309,9 +353,18 @@ a {
     background-image: linear-gradient(to bottom, lightgray, slategray);
     width: 100%;
     height: 500px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 350px 150px;
+    gap: 0px 0px;
+    grid-template-areas: "imagenesProd"
+                         "textosProd";
 }
 
-/* ---------------------------------------------------------------------------------------------------*/
+//IMAGENES Y HOVER
+
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 /* SECCION FIND A STORE */
 
@@ -395,6 +448,8 @@ a {
     list-style-type: none;
 }
 
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 /* SECCION LEARN - PRODUCT GUIDANCE */
 
 .grilla {
@@ -469,6 +524,8 @@ a {
     width: 100%;
     background-color: #aa9a9a; }
 
+
+// -------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 /*OTROS*/
 
