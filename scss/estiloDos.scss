@@ -50,6 +50,12 @@ h1{
     padding-top: 30px;
 }
 
+p{
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
 
 #tituloh2{
     color: #6d9773;
@@ -219,6 +225,8 @@ a {
 
     /* SECCION PRODUCTOS*/
 
+
+
 #grillaProductos{
     display: grid;
     grid-template-columns: 21.5% 26% 26% 26%;
@@ -246,7 +254,7 @@ a {
 
 #homeUno{
     grid-area: homeUno;
-    background-image: linear-gradient(to bottom, lightgray, slategray);
+    background-color: linear-gradient(to bottom, lightgray, slategray);
     width: 100%;
     height: 500px;
     display: grid;
